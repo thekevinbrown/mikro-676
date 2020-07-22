@@ -8,7 +8,7 @@
 	"scripts": {
 		"build": "webpack --config webpack.config.js",
 		"profile": "yarn build && 0x -o dist/index",
-		"start": "yarn build && node --inspect dist/index"
+		"start": "yarn build && node dist/index"
 	},
 	"dependencies": {
 		"@mikro-orm/core": "4.0.0-alpha.7",
