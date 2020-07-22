@@ -89,4 +89,4 @@ spent in highlight.js, while the other half is spent getting a database connecti
 
 To run profiling locally after doing the steps above, run `yarn profile`. This should run then generate and open a flamegraph in your browser.
 
-Expected Output:
+[Here's an example flame graph.](https://htmlpreview.github.io/?https://raw.githubusercontent.com/thekevinbrown/mikro-676/master/flamegraph/index.html)
