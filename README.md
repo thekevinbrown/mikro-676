@@ -81,3 +81,12 @@ TypeError: Cannot read property '__meta' of undefined
     at SqlEntityManager.persistAndFlush (/Users/kevin/development/mikro-676/node_modules/@mikro-orm/core/EntityManager.js:316:20)
 error Command failed with exit code 1.
 ```
+
+## Profiling
+
+Because `MikroORM.init` is taking quite a while, I've added 0x to profile what's taking so long. It looks like about half the time in init is
+spent in highlight.js, while the other half is spent getting a database connection, and the rest is not worth optimising because it's so small.
+
+To run profiling locally after doing the steps above, run `yarn profile`. This should run then generate and open a flamegraph in your browser.
+
+Expected Output:

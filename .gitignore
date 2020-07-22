@@ -108,3 +108,6 @@ lib
 
 # Webpack output
 dist
+
+# 0x output
+*.0x
