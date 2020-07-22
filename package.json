@@ -1,0 +1,24 @@
+{
+	"name": "mikro-676",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "https://github.com/thekevinbrown/mikro-676.git",
+	"author": "Kevin Brown <kevin.brown@techin.site>",
+	"license": "MIT",
+	"scripts": {
+		"build": "webpack --config webpack.config.js",
+		"start": "yarn build && node dist/index"
+	},
+	"dependencies": {
+		"@mikro-orm/core": "4.0.0-alpha.7",
+		"@mikro-orm/postgresql": "4.0.0-alpha.7",
+		"webpack": "4.43.0",
+		"webpack-cli": "3.3.12"
+	},
+	"devDependencies": {
+		"@types/node": "14.0.24",
+		"terser-webpack-plugin": "3.0.7",
+		"ts-loader": "8.0.1",
+		"typescript": "3.9.7"
+	}
+}
